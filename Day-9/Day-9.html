@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map</title>
+
+    <style>
+      .form {
+        text-align: center;
+        border: 2px solid rgb(14, 134, 208);
+
+        border-radius: 8px;
+        background-color: rgb(134, 245, 245);
+        margin-left: 220px;
+        margin-right: 220px;
+      }
+      h1 {
+        text-align: center;
+        font-family: inherit;
+        color: #1877f2;
+      }
+      #login {
+        color: white;
+        font-family: inherit;
+        background-color: #1877f2;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+      #reset {
+        color: white;
+        font-family: inherit;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form onsubmit="" class="form">
+      <br />
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="enter username"
+      /><br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="enter username" /><br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="enter password" /><br />
+      <br />
+
+      <label for="batch">Batch Type</label><br />
+
+      <input type="radio" name="batchtype" value="online" id="online" />
+      <label for="online">Online</label>
+      <input type="radio" name="batchtype" id="offline" />
+      <label for="offline">Offline</label><br /><br />
+
+      <label for="checkbox">Skills</label><br />
+      <input type="checkbox" name="java" id="java" />
+      <label for="java">java</label>
+
+      <input type="checkbox" name="html" id="html" />
+      <label for="html">html</label>
+
+      <input type="checkbox" name="css" id="css" />
+      <label for="css">css</label>
+
+      <input type="checkbox" name="sql" id="sql" />
+      <label for="sql">sql</label><br /><br />
+
+      <label for="course">Course</label>
+      <select name="course" id="course">
+        <option value="">--select a course--</option>
+        <option value="java">Java Full Stack</option>
+        <option value="python">Python Full Stack</option>
+
+        <option value="testing">Software Testing</option>
+        <option value="MERN">MERN Stack development</option></select
+      ><br /><br />
+
+      <br />
+      <button onclick="alert('Login Successful!')" id="login">Login</button>
+      <input type="reset" id="reset" /><br /><br />
+    </form>
+    <br />
+    <img
+      src="./../irise.jpg"
+      alt="image not found"
+      width="400px"
+      height="250px"
+    />
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.402740363455!2d73.7459882!3d18.6009466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe7c963009b%3A0xf02b79f6b631c119!2sI-Rise%20Software%20Training%20Institute!5e0!3m2!1sen!2sin!4v1695016143063!5m2!1sen!2sin"
+      width="330"
+      height="250"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
